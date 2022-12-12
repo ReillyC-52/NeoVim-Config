@@ -2,6 +2,7 @@ return require('packer').startup(function(use)
  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'sts10/vim-pink-moon'
+  use 'nvim-lua/plenary.nvim'
   use {
   'nvim-tree/nvim-tree.lua',
   requires = {
@@ -16,5 +17,6 @@ return require('packer').startup(function(use)
             ts_update()
         end,
     }
+    use 'nvim-treesitter/nvim-treesitter-refactor'
 end)
 
