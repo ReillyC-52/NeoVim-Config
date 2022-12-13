@@ -18,5 +18,6 @@ return require('packer').startup(function(use)
         end,
     }
     use 'nvim-treesitter/nvim-treesitter-refactor'
+    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 end)
 

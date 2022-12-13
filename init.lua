@@ -2,5 +2,5 @@ require("settings")
 require("plugins")
 require("key-maps")
 require("nvim-tree-config")
+require("diffview-config")
 require("treesitter-config")
-
