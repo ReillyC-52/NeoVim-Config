@@ -25,3 +25,9 @@ map('n', '<C-Left>', ':vertical resize -3<CR>', opts)
 map('n', '<C-Down>', ':resize +3<CR>', opts)
 map('n', '<C-Up>', ':resize -3<CR>', opts)
 
+map('n', '<leader>gs', ':G<CR>', opts)
+map('n', '<leader>gl', ':G log<CR>', opts)
+map('n', '<leader>gh', ':DiffviewFileHistory<CR>', opts)
+
+map('v', 'K',':m \'<-2<CR>gv=gv',opts)
+map('v', 'J',':m \'>+1<CR>gv=gv',opts)
