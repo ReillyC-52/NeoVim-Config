@@ -1,5 +1,3 @@
-
--- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -13,6 +11,7 @@ require("nvim-tree").setup {
             { key = "u", action = "dir_up" },
             { key = "s", action = "split" },
             { key = "v", action = "vsplit" },
+            { key = "<C-d>", action = "cd" },
       },
     },
   },
