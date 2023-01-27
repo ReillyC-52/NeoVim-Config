@@ -9,6 +9,7 @@ set.incsearch = true
 set.expandtab = true
 set.errorbells = false
 set.smartcase = true
+set.swapfile = false
 set.tabstop = 4 
 set.shiftwidth = 4 
 
