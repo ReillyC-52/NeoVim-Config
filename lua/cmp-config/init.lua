@@ -69,5 +69,5 @@ end
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   require('lspconfig')['pyright'].setup { capabilities = capabilities }
   require('lspconfig')['tsserver'].setup { capabilities = capabilities }
-  require('lspconfig')['sumneko_lua'].setup { capabilities = capabilities }
+  require('lspconfig')['lua_ls'].setup { capabilities = capabilities }
   require('lspconfig')['rust_analyzer'].setup { capabilities = capabilities }

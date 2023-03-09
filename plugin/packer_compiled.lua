@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["CodeGPT.nvim"] = {
+    loaded = true,
+    path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/CodeGPT.nvim",
+    url = "https://github.com/dpayne/CodeGPT.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -108,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/nerdcommenter",
     url = "https://github.com/preservim/nerdcommenter"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
