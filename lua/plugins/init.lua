@@ -1,5 +1,5 @@
 return require('packer').startup(function(use)
-	use   'wbthomason/packer.nvim'
+	use {  'wbthomason/packer.nvim' }
 	use { 'sts10/vim-pink-moon'    }
     use { 'nvim-tree/nvim-tree.lua',
     requires = {
@@ -32,5 +32,8 @@ return require('packer').startup(function(use)
     use { 'nvim-lua/plenary.nvim' }
     use { 'MunifTanjim/nui.nvim' }
     use { 'dpayne/CodeGPT.nvim' }
+    use { 'JellyApple102/flote.nvim' }
+
     require('lualine').setup {}
+    require('flote').setup {}
 	end)

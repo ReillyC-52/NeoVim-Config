@@ -1,7 +1,7 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
-
 vim.g.mapleader = ' '
+
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
 
 map('i', 'kj', '<esc>', opts)
@@ -30,3 +30,5 @@ map('n', '<leader>gh', ':DiffviewFileHistory<CR>', opts)
 
 map('v', 'K',':m \'<-2<CR>gv=gv',opts)
 map('v', 'J',':m \'>+1<CR>gv=gv',opts)
+
+map('n', '<leader>nt', ':Flote<CR>', opts)

@@ -9,8 +9,8 @@ set.incsearch = true
 set.expandtab = true
 set.errorbells = false
 set.smartcase = true
-set.tabstop = 4 
-set.shiftwidth = 4 
+set.tabstop = 4
+set.shiftwidth = 4
 
 
 
