@@ -3,7 +3,7 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = ' '
 
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
-
+map('n', '<C-u>', ':UndotreeToggle<CR>', opts)
 map('i', 'kj', '<esc>', opts)
 map('c', 'kj', '<esc>', opts)
 map('i', 'KJ', '<esc>', opts)
