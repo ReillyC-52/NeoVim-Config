@@ -1,6 +1,7 @@
 return require('packer').startup(function(use)
 	use {  'wbthomason/packer.nvim' }
 	use { 'sts10/vim-pink-moon'    }
+    use { 'voidekh/kyotonight.vim' }
     use { 'nvim-tree/nvim-tree.lua',
     requires = {
         'nvim-tree/nvim-web-devicons',},

@@ -15,4 +15,4 @@ set.shiftwidth = 4
 
 
 set.termguicolors = true
-vim.cmd [[silent! colorscheme pink-moon]]
+vim.cmd [[silent! colorscheme kyotonight]]
