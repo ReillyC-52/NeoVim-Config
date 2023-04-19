@@ -37,5 +37,10 @@ return require('packer').startup(function(use)
     use { 'JellyApple102/flote.nvim' }
 
     require('lualine').setup {}
-    require('flote').setup {}
+    require('flote').setup{
+        q_to_quit = true,
+        window_style = 'minimal',
+        window_border = 'solid',
+        window_title = false
+    }
 	end)

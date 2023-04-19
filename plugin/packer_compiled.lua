@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/flote.nvim",
     url = "https://github.com/JellyApple102/flote.nvim"
   },
+  ["kyotonight.vim"] = {
+    loaded = true,
+    path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/kyotonight.vim",
+    url = "https://github.com/voidekh/kyotonight.vim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/lualine.nvim",
