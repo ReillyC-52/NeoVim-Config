@@ -13,11 +13,17 @@ map('n', 'Y', 'y$', opts)
 
 map('v', '<C-c>','"*y"',opts)
 
-map('', '<leader>h',':wincmd h<CR>',opts)
-map('', '<leader>j',':wincmd j<CR>',opts)
-map('', '<leader>k',':wincmd k<CR>',opts)
-map('', '<leader>l',':wincmd l<CR>',opts)
+--map('', '<leader>h',':wincmd h<CR>',opts)
+--map('', '<leader>j',':wincmd j<CR>',opts)
+--map('', '<leader>k',':wincmd k<CR>',opts)
+--map('', '<leader>l',':wincmd l<CR>',opts)
 
+map('n', 'd', '"_d', opts)
+map('n', 'D', '"_D', opts)
+map('', '<C-h>',':<C-U>TmuxNavigateLeft<cr>',opts)
+map('', '<C-j>',':<C-U>TmuxNavigateDown<cr>',opts)
+map('', '<C-k>',':<C-U>TmuxNavigateUp<cr>',opts)
+map('', '<C-l>',':<C-U>TmuxNavigateRight<cr>',opts)
 
 map('n', '<C-Right>', ':vertical resize +3<CR>', opts)
 map('n', '<C-Left>', ':vertical resize -3<CR>', opts)
