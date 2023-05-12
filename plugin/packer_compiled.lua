@@ -198,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/vim-pink-moon",
     url = "https://github.com/sts10/vim-pink-moon"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/reillyc52/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 

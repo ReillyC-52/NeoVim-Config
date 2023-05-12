@@ -24,18 +24,25 @@ return require('packer').startup(function(use)
     end, }
     use { 'preservim/nerdcommenter' }
     use { 'nvim-treesitter/nvim-treesitter-refactor' }
-    use { 'neovim/nvim-lspconfig' }
     use { 'williamboman/nvim-lsp-installer' }
-    use { 'hrsh7th/cmp-nvim-lsp' }
     use { 'mbbill/undotree' }
+    use { 'neovim/nvim-lspconfig' }
+    use { 'hrsh7th/nvim-cmp' }
+    use { 'hrsh7th/cmp-nvim-lsp' }
+    use { 'hrsh7th/cmp-nvim-lsp-signature-help' }
     use { 'hrsh7th/cmp-buffer' }
     use { 'hrsh7th/cmp-path' }
     use { 'hrsh7th/cmp-cmdline' }
-    use { 'hrsh7th/nvim-cmp' }
     use { 'nvim-lua/plenary.nvim' }
     use { 'MunifTanjim/nui.nvim' }
     use { 'dpayne/CodeGPT.nvim' }
     use { 'JellyApple102/flote.nvim' }
+      -- Prettier
+      use {
+    'prettier/vim-prettier',
+    run = 'yarn install --frozen-lockfile --production',
+    ft = {'javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'}
+  }
 
     require('lualine').setup {}
     require('flote').setup{
