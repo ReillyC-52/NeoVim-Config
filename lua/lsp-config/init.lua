@@ -20,7 +20,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+  vim.keymap.set('n', '<space>K', vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
   vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
   vim.keymap.set('n', '<space>wl', function()
@@ -48,6 +48,17 @@ require('lspconfig')['html'].setup{
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+}
+require('lspconfig')['ccls'].setup{
+  -- Set the path to the ccls executable
+  cmd = { 'ccls' },
+
+  -- Set any additional options for the language server
+  init_options = {
+    highlight = {
+      lsRanges = true
+    }
+  }
 }
 require('lspconfig')['lua_ls'].setup{
     on_attach = on_attach,

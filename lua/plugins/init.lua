@@ -3,14 +3,14 @@ return require('packer').startup(function(use)
 	use { 'sts10/vim-pink-moon'    }
 	use { 'christoomey/vim-tmux-navigator'    }
     use { 'voidekh/kyotonight.vim' }
+    use { 'nvim-tree/nvim-web-devicons' }
     use { 'nvim-tree/nvim-tree.lua',
     requires = {
         'nvim-tree/nvim-web-devicons',},
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
 	use { 'nvim-lualine/lualine.nvim',
-  	requires = { 'nvim-tree/nvim-web-devicons',
-	opt      = true } }
+  	requires = { 'nvim-tree/nvim-web-devicons',opt = true } }
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
     use { 'tpope/vim-fugitive' }
     use { 'nvim-telescope/telescope.nvim',
@@ -37,12 +37,6 @@ return require('packer').startup(function(use)
     use { 'MunifTanjim/nui.nvim' }
     use { 'dpayne/CodeGPT.nvim' }
     use { 'JellyApple102/flote.nvim' }
-      -- Prettier
-      use {
-    'prettier/vim-prettier',
-    run = 'yarn install --frozen-lockfile --production',
-    ft = {'javascript', 'typescript', 'css', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'}
-  }
 
     require('lualine').setup {}
     require('flote').setup{
